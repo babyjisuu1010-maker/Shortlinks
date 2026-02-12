@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/ig", "destination": "https://instagram.com", "permanent": false },
+    { "source": "/yt", "destination": "https://youtube.com", "permanent": false },
+    { "source": "/google", "destination": "https://google.com", "permanent": false }
+  ]
+}

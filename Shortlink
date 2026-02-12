@@ -1,0 +1,16 @@
+api/[code].js
+const links = {
+  ig: "https://instagram.com",
+  yt: "https://youtube.com",
+  google: "https://google.com"
+};
+
+export default function handler(req, res) {
+  const { code } = req.query;
+
+  if (links[code]) {
+    res.redirect(302, links[code]);
+  } else {
+    res.status(404).send("Link tidak ditemukan");
+  }
+}
